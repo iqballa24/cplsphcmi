@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/regular.js"></script>
+    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+    <title>LSP HCMI</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div id="navbar" class="nav-container">
+                <a href="javascript:void(0)" class="nav-logo">
+                    <img class="img-fluid" src="./assets/img/vector/logo.svg" alt="logo">
+                    <span class="logo-text">LSP HCMI</span>
+                </a>
+                <ul class="nav-menus">
+                    <div class="btn-cancel">
+                        <p>&#10006;</p>
+                    </div>
+                    <li><a class="nav-item"href="index.html">Beranda</a></li>
+                    <li><a class="nav-item" href="about.html">Tentang</a></li>
+                    <li><a class="nav-item" href="skema.html">Skema</a></li>
+                    <li><a class="nav-item" href="galery.html">Galeri</a></li>
+                    <li><a class="nav-item active" href="contact.html">Kontak</a></li>
+                    <li><a onclick="openModalRegister()" class="button button-primary" href="javascript:void(0)">Daftar</a></li>
+                </ul>
+                <label id="btn-toggler" for="check">
+                    <input type="checkbox" id="check"/> 
+                    <span class="nav-span"></span>
+                    <span class="nav-span"></span>
+                    <span class="nav-span"></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- preloader -->
+        <div id="preloader" class="preloader">
+            <div id="precontent" class="preloader-content">
+                <img src="./assets/img/Ripple-1.3s-211px.gif" alt="preloader" width="85rem">
+            </div>
+        </div>
+
+        <!-- Target btn scroll down -->
+        <section id="scroll-down"></section>
+
+        <!-- contact-section -->
+        <section class="contact-section">
+            <div class="contact-formBx">
+                <form name="submit-to-google-sheet" action="">
+                    <h1 class="h1-custom">Get in touch</h1>
+                    <div class="inputBox">
+                        <input type="text" name="nama" required>
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="email" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="pesan" id="" cols="30" rows="10" required></textarea>
+                        <span>Type Your Message Here...</span>
+                    </div>
+                        <button type="submit" class="button button-primary button-kirim">Submit</button>
+                        <button type="submit" class="button button-primary button-loading d-none">
+                            <span class="spinner-border spinner-border-md" role="status" aria-hidden="true"></span>
+                            Loading...
+                        </button>
+                </form>
+            </div>
+            <div class="contact-imgBx">
+                <!-- <img src="./assets/img/girl.png" alt=""> -->
+                <img src="./assets/img/vector/pana.svg" alt="">
+            </div>
+        </section>
+
+        <!-- Message -->
+        <div id="notif-info" class="notif-info">
+            <i class="fas fa-info-circle"></i> Your message was delivered
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="footer-section-map col-lg-5">
+                        <iframe class="map" src="https://maps.google.com/maps?q=Jl.%20Jatinegara%20Barat%20II%20Nomor%2011%20RT.%2014%20/%20RW.%2002%20Jatinegara,%20Balimester%20Jakarta%20Timur&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width: 100%; height: 354px;" allowfullscreen></iframe>
+                    </div>
+                    <div class="footer-section-info col-lg-7 align-self-center">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h1 class="mb-4">LSP HCMI</h1>
+                                <p>LSP HCMI adalah LSP Pihak 3 yang akan melayani seluruh karyawan BUMN dan BUMD juga karyawan swasta atau siapa saja yang membutuhkan sertifikasi bidang SDM / Human Capital</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <h1 class="mb-4">Hubungi Kami</h1>
+                                <p class="mb-4"><i class="fas fa-map-marker-alt"></i> Jl. Jatinegara Barat II Nomor 11 RT. 14 / RW. 02 Jatinegara, Balimeste, Jakarta Timur</p>
+                                <p><i class="fas fa-phone-alt"></i> 021-2119-3636</p>
+                                <p><i class="fas fa-envelope"></i> admin@lsphcmi.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-section-cprt col-12">
+                        <p style="color: #444444;;">Copyright 2021 LSP HCMI. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- modal daftar -->
+    <div id="myModalRegister" class="modal-daftar">
+        <div class="modal-content">
+            <span class="close cursor" onclick="closeModalRegister()">&times;</span>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-12 mb-5 sertifikasi-section">
+                            <img class="fluid" src="./assets/img/vector/vector_certificate.svg" alt="Sertifikasi LSP HCMI">
+                        </div>
+                        <div class="col-12">
+                            <a href="https://forms.gle/3a3tkBiFQHPFEGLc7" class="button button-primary" target="_blank">Sertifikasi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pelatihan-section">
+                    <div class="row">
+                        <div class="col-12 mb-5">
+                            <img class="fluid" src="./assets/img/vector/vector_education.svg" alt="Pelatihan LSP HCMI">
+                        </div>
+                        <div class="col-12">
+                            <a href="https://forms.gle/NLqUb8nmafUfxvLw9" class="button button-primary" target="_blank">Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Float button -->
+    <a href="#" class="button-float" id="goto-top">
+        <i class="fas fa-caret-up my-float"></i>
+    </a>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxgeknhjdnQ6Gb8PL1rRjBKrZC5Dp0r8_Jqr2Snb3fw2J0wD224qFCHe7jW52Hvd72C/exec'
+        const form       = document.forms['submit-to-google-sheet']
+        const btnKirim   = document.querySelector('.button-kirim');
+        const btnLoading = document.querySelector('.button-loading');
+      
+        form.addEventListener('submit', e => {
+
+            e.preventDefault()
+            // When click submit, show loading button and hide submit button
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    console.log('Success!', response)
+                    btnLoading.classList.toggle('d-none');
+                    btnKirim.classList.toggle('d-none');
+                    form.reset();
+                    showMessage()
+                })
+                .catch(error => console.error('Error!', error.message))
+        });
+
+        function showMessage() {
+            const notif = document.getElementById("notif-info");
+            notif.classList.add("show");
+            setTimeout( _ =>
+                { 
+                    notif.className = notif.className.replace("show", ""); 
+                }, 3000);
+        }
+    </script>
+
+</body>
+</html>

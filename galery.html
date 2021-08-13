@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/regular.js"></script>
+    <script defer src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+    <title>LSP HCMI</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div id="navbar" class="nav-container">
+                <a href="javascript:void(0)" class="nav-logo">
+                    <img class="img-fluid" src="./assets/img/vector/logo.svg" alt="logo">
+                    <span class="logo-text">LSP HCMI</span>
+                </a>
+                <ul class="nav-menus">
+                    <div class="btn-cancel">
+                        <p>&#10006;</p>
+                    </div>
+                    <li><a class="nav-item"href="index.html">Beranda</a></li>
+                    <li><a class="nav-item" href="about.html">Tentang</a></li>
+                    <li><a class="nav-item" href="skema.html">Skema</a></li>
+                    <li><a class="nav-item active" href="#">Galeri</a></li>
+                    <li><a class="nav-item" href="contact.html">Kontak</a></li>
+                    <li><a onclick="openModalRegister()" class="button button-primary" href="javascript:void(0)">Daftar</a></li>
+                </ul>
+                <label id="btn-toggler" for="check">
+                    <input type="checkbox" id="check"/> 
+                    <span class="nav-span"></span>
+                    <span class="nav-span"></span>
+                    <span class="nav-span"></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- preloader -->
+        <div id="preloader" class="preloader">
+            <div id="precontent" class="preloader-content">
+                <img src="./assets/img/Ripple-1.3s-211px.gif" alt="preloader" width="85rem">
+            </div>
+        </div>
+        
+        <!-- Hero section -->
+        <section class="carousel-section">
+            <div class="carousel-text">
+                <h1>Lembaga Sertifikasi Profesi Human Capital Management Indonesia</h1>
+                <a href="#" class="scroll-down" address="true"></a>
+            </div>
+        </section>
+
+        <!-- Target btn scroll down -->
+        <section id="scroll-down"></section>
+
+        <!-- Galery section -->
+        <div class="gallery-container container-fluid">
+            <h1 class="h1-custom mb-5 text-center">Dokumentasi Kegiatan</h1>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <img class="gallery-img1 img-hover__zoom-colorize" src="./assets/img/dokumentasi/1.png" alt="" width="100%">
+                        </div>
+                        <div class="col-lg-6 col-md-6 align-self-center">
+                            <div class="row">
+                                <img class="gallery-img2 img-hover__zoom-colorize" src="./assets/img/dokumentasi/2.png" alt="" width="100%">
+                                <img class="img-hover__zoom-colorize" src="./assets/img/dokumentasi/3.png" alt="" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <img class="gallery-img5 img-hover__zoom-colorize" src="./assets/img/dokumentasi/5.png" alt="" width="100%">
+                        </div>
+                        <div class="col-lg-6 col-md-6 align-self-center">
+                            <div class="row">
+                                <img class="gallery-img6 img-hover__zoom-colorize" src="./assets/img/dokumentasi/6.png" alt="" width="100%">
+                                <img class="img-hover__zoom-colorize" src="./assets/img/dokumentasi/7.png" alt="" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <img class="gallery-img4 img-hover__zoom-colorize" src="./assets/img/dokumentasi/4.png" alt="" width="100%">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <img class="gallery-img8 img-hover__zoom-colorize" src="./assets/img/dokumentasi/8.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-md-5">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <img class="gallery-img9 img-hover__zoom-colorize" src="./assets/img/dokumentasi/9.jpg" alt="" width="100%">
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <img class="gallery-img10 img-hover__zoom-colorize" src="./assets/img/dokumentasi/10.jpg" alt="" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <img class="gallery-img11 img-hover__zoom-colorize" src="./assets/img/dokumentasi/11.jpg" alt="" width="100%">
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <img class="img-hover__zoom-colorize" src="./assets/img/dokumentasi/12.jpg" alt="" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 mb-sm-5 align-self-center">
+                            <div class="row">
+                                <img class="gallery-img13 img-hover__zoom-colorize" src="./assets/img/dokumentasi/13.png" alt="" width="100%">
+                                <img class="img-hover__zoom-colorize" src="./assets/img/dokumentasi/15.png" alt="" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="row">
+                                <img class="img-hover__zoom-colorize" src="./assets/img/dokumentasi/14.png" alt="" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="row">
+                                <img class="img-hover__zoom-colorize" src="./assets/img/dokumentasi/16.png" alt="" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 align-self-center">
+                            <div class="row">
+                                <img class="gallery-img17 img-hover__zoom-colorize" src="./assets/img/dokumentasi/17.png" alt="">
+                                <img class="img-hover__zoom-colorize" src="./assets/img/dokumentasi/18.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="footer-section-map col-lg-5">
+                        <iframe class="map" src="https://maps.google.com/maps?q=Jl.%20Jatinegara%20Barat%20II%20Nomor%2011%20RT.%2014%20/%20RW.%2002%20Jatinegara,%20Balimester%20Jakarta%20Timur&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width: 100%; height: 100%; min-height: 354px;" allowfullscreen></iframe>
+                    </div>
+                    <div class="footer-section-info col-lg-7 align-self-center">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h1 class="mb-4">LSP HCMI</h1>
+                                <p>LSP HCMI adalah LSP Pihak 3 yang akan melayani seluruh karyawan BUMN dan BUMD juga karyawan swasta atau siapa saja yang membutuhkan sertifikasi bidang SDM / Human Capital</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <h1 class="mb-4">Hubungi Kami</h1>
+                                <p class="mb-4"><i class="fas fa-map-marker-alt"></i> Jl. Jatinegara Barat II Nomor 11 RT. 14 / RW. 02 Jatinegara, Balimeste, Jakarta Timur</p>
+                                <p><i class="fas fa-phone-alt"></i> 021-2119-3636</p>
+                                <p><i class="fas fa-envelope"></i> admin@lsphcmi.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-section-cprt col-12">
+                        <p style="color: #444444;;">Copyright 2021 LSP HCMI. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- modal daftar -->
+    <div id="myModalRegister" class="modal-daftar">
+        <div class="modal-content">
+            <span class="close cursor" onclick="closeModalRegister()">&times;</span>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-12 mb-5 sertifikasi-section">
+                            <img class="fluid" src="./assets/img/vector/vector_certificate.svg" alt="Sertifikasi LSP HCMI">
+                        </div>
+                        <div class="col-12">
+                            <a href="https://forms.gle/3a3tkBiFQHPFEGLc7" class="button button-primary" target="_blank">Sertifikasi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pelatihan-section">
+                    <div class="row">
+                        <div class="col-12 mb-5">
+                            <img class="fluid" src="./assets/img/vector/vector_education.svg" alt="Pelatihan LSP HCMI">
+                        </div>
+                        <div class="col-12">
+                            <a href="https://forms.gle/NLqUb8nmafUfxvLw9" class="button button-primary" target="_blank">Pelatihan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Float button -->
+    <a href="#" class="button-float" id="goto-top">
+        <i class="fas fa-caret-up my-float"></i>
+    </a>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
