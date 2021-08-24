@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', _ => {
 //Scroll down 
 $(function() {
     $('.scroll-down').click (function() {
-      $('html, body').animate({scrollTop: $('section#scroll-down').offset().top }, 500);
+      $('html, body').animate({scrollTop: $('div#scroll-down').offset().top }, 500);
       return false;
     });
 });
