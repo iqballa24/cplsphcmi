@@ -1,0 +1,17 @@
+[debug] [2022-04-03T16:10:54.828Z] ----------------------------------------------------------------------
+[debug] [2022-04-03T16:10:54.829Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\iqbal\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-04-03T16:10:54.830Z] CLI Version:   10.5.0
+[debug] [2022-04-03T16:10:54.830Z] Platform:      win32
+[debug] [2022-04-03T16:10:54.830Z] Node Version:  v16.13.2
+[debug] [2022-04-03T16:10:54.831Z] Time:          Sun Apr 03 2022 23:10:54 GMT+0700 (Indochina Time)
+[debug] [2022-04-03T16:10:54.831Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-03T16:10:54.894Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-03T16:10:54.895Z] > authorizing via signed-in user (iqbalnugraha347@gmail.com)
+[debug] [2022-04-03T16:10:54.895Z] [iam] checking project cplsphcmi for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-04-03T16:10:54.897Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cplsphcmi:testIamPermissions [none]
+[debug] [2022-04-03T16:10:54.898Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cplsphcmi:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-03T16:10:56.146Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cplsphcmi:testIamPermissions 200
+[debug] [2022-04-03T16:10:56.146Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cplsphcmi:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-03T16:10:56.147Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cplsphcmi [none]
+[debug] [2022-04-03T16:11:26.155Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/cplsphcmi
